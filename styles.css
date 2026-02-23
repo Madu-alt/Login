@@ -23,3 +23,14 @@ body  {
     padding: 30px 40px;
     box-shadow: 0 0 10px rgba(255, 255, 255, .2);
  }
+
+ .container h1 { 
+    font-size: 36px;
+    text-align: center;
+ }
+
+ .input-group { 
+    position: relative;
+    width: 100%;
+    
+ }
