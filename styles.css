@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Bebas Neue", sans-serif;
+    font-family: 'BR Shape', sans-serif;                       
+    font-size: medium;
 }
 
 body  {  
@@ -10,7 +11,7 @@ body  {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(./img/imagem.jpg);
+    background: url(./img/vector.girl.png);
     background-size: cover;
     background-position: center;
 }
@@ -22,6 +23,7 @@ body  {
     color: aliceblue;
     padding: 30px 40px;
     box-shadow: 0 0 10px rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
  }
 
  .container h1 { 
@@ -32,5 +34,88 @@ body  {
  .input-group { 
     position: relative;
     width: 100%;
-    
+    height: 50px;
+    margin: 30px 0;
  }
+
+ .input-group input { 
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border: 2px solid rgba(255, 255, 255, .2);
+        outline: none;
+        border-radius: 40px;
+        color: aliceblue;
+        padding: 20px 45px 20px 20px;
+        font-size: 16px;
+        font-family: 'Noto Serif Display', sans-serif;
+    }
+
+    .input-group input::placeholder{
+        color: aliceblue;
+    }
+
+    .input-group i { 
+        position: absolute;
+        right: 20px;
+        font-size: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: rgba(248, 248, 248, 0.685);
+    }
+
+    .remember-forgot { 
+        display: flex;
+        justify-content: space-between;
+        margin: -15px 0px 15px;
+    }
+
+    .remember-forgot input label { 
+        accent-color: white;
+    }
+
+    .remember-forgot a { 
+        color: aliceblue;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .remember-forgot a:hover { 
+        text-decoration: underline;
+    }
+
+    button { 
+        width: 100%;
+        height: 50px;
+        border: none;
+        outline: none;
+        background-color: #fff;
+        color: #333;
+        font-size: 17px;
+        font-weight: 600;
+        border-radius: 40px;
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, .1);
+        margin-top: 20px;
+    }
+
+    button:hover { 
+        background-color: transparent;
+        border: 2px solid rgba(255, 255, 255, .2);
+        color: aliceblue;
+        transition: 0.2s;
+    }
+
+.register-link { 
+    font-size: 14px;
+    margin: 20px 0px 15px;
+    text-align: center;
+}
+.register-link a { 
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 600;
+}
+.register-link a:hover { 
+    text-decoration: underline;
+}
