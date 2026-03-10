@@ -8,12 +8,13 @@
 
 body  {  
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     min-height: 100vh;
     background: url(./img/vector.girl.png);
     background-size: cover;
     background-position: center;
+    margin: 0;
 }
 .container {
     width: 420px;
@@ -119,3 +120,61 @@ body  {
 .register-link a:hover { 
     text-decoration: underline;
 }
+
+.container {
+    animation: animate 0.7s ease-in-out forwards;
+} 
+@keyframes animate {
+    0% {
+        transform: translateY(-50px) scale(0.95);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
+.containerForm { 
+    width: 500px;
+    height: auto;
+    max-height: 80vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    display: block;
+    width: 420px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    color: aliceblue;
+    padding:  40px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    animation: animate 0.7s ease-in-out forwards;
+}
+
+.containerForm h1 { 
+    font-size: 36px;
+    text-align: center;
+    padding: 0px 0px 20px;
+}
+
+.containerForm p { 
+    font-size: 14px;
+    text-align: center;
+    padding: 0px 0px 20px;
+}
+.signUpForm { 
+    font-size: 14px;
+    margin: 20px 0px 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
